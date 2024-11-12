@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <link rel="stylesheet" href="marking.css">
+    <style>
+        /* Add styles to make the color change more visible */
+        .present-selected {
+            background-color: green;
+        }
+        .absent-selected {
+            background-color: red;
+        }
+    </style>
+</head>
+<body><div class="header">
+    <div class="college-info-left">
+        <p style="color: red ; font-weight: bold;">COLLEGE CODE: K9</p>
+        <p>Survey No.8/A, Medbowli, Meerpet<br>
+        Hyderabad - 500097, Telangana, INDIA</p>
+        <p><a href="http://www.tkrct.ac.in">www.tkrct.ac.in</a></p>
+    </div>
+    
+    <div class="center-content">
+        <h1 style="font-family: 'Times New Roman', Times, serif;">TKR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+        <img src="../images/logo.png" alt="TKRCET Logo" class="logo"> <!-- Replace "images/logo.png" with the actual path to the logo -->
+    </div>
+
+    <div class="college-info-right">
+        <p class="red-text">An Autonomous Institution</p>
+        <p>Accredited with 'A+' Grade by NAAC<br>
+        Approved by AICTE, New Delhi<br>
+        Affiliated to JNTUH<br>
+        Recognized under 2(f) & 12(B) of UGC</p>
+    </div>
+</div>
+
+  <nav>
+    <div class="left-section">
+        <ul class="nav-links">
+            <li><a href="../one.html">Home</a></li>
+            <li><a href="./timetable/timetable.html">Timetable</a></li>
+            <li><a href="./Attendance/attendance.html">Attendance</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+        </ul>
+    </div>
+        <div class="user-profile">
+            <span>Welcome,User</span>
+            <div class="dropdown">
+                <button class="dropbtn">Account ▾</button>
+                <div class="dropdown-content">
+                    <a href="#settings">Settings</a>
+                    <a href="../login/login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="attendance-container">
+        <p class="mandatory-text">* You Must select Period and Write Topic Obligatory</p>
+        <h2 class="attendance-title">Attendance on 06-11-2024</h2>
+        
+        <div class="form-section">
+            <div class="period-section">
+                <label>Period :</label>
+                <input type="checkbox" id="period1" name="period" value="1"> <label for="period1">1</label>
+                <input type="checkbox" id="period2" name="period" value="2"> <label for="period2">2</label>
+                <input type="checkbox" id="period3" name="period" value="3"> <label for="period3">3</label>
+                <input type="checkbox" id="period4" name="period" value="4"> <label for="period4">4</label>
+                <input type="checkbox" id="period5" name="period" value="5"> <label for="period5">5</label>
+                <input type="checkbox" id="period6" name="period" value="6"> <label for="period6">6</label>
+            </div>
+            
+            <div class="subject-topic">
+                <label for="subject">Sub :</label>
+                <input type="text" id="subject" placeholder="Enter Subject">
+                
+                <label for="topic">Topic :</label>
+                <textarea id="topic" placeholder="Enter Topic"></textarea>
+                
+                <label for="remarks">Remarks :</label>
+                <textarea id="remarks" placeholder="Enter Remarks"></textarea>
+            </div>
+        </div>
+        <table class="attendance-table">
+          <thead>
+              <tr>
+                  <th>Roll Number</th>
+                  <th>Student Name</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>23891A6XYZ</td>
+                  <td>Name 1</td>
+                  <td><input type="radio" onclick="setAttendanceColor(this, 'present')" name="attendance1" value="present"></td>
+                  <td><input type="radio" onclick="setAttendanceColor(this, 'absent')" name="attendance1" value="absent"></td>
+              </tr>
+              <tr>
+                  <td>23891A6XYZ</td>
+                  <td>NAME 2</td>
+                  <td><input type="radio" onclick="setAttendanceColor(this, 'present')" name="attendance2" value="present"></td>
+                  <td><input type="radio" onclick="setAttendanceColor(this, 'absent')" name="attendance2" value="absent"></td>
+              </tr>
+          </tbody>
+      </table>
+      <button onclick="sub()" id="submit-button">Submit</button>
+      <script>
+        function setAttendanceColor(element, status) {
+            // Clear any previous selection colors in the row
+            const row = element.closest('tr');
+            row.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.classList.remove('present-selected', 'absent-selected');
+            });
+            
+            // Add the appropriate color based on selection
+            if (status === 'present') {
+                element.classList.add('present-selected');
+            } else if (status === 'absent') {
+                element.classList.add('absent-selected');
+            }
+        }
+        function sub(){
+        document.getElementById('submit-button').innerHTML="Submited";
+        document.getElementById('submit-button').style.backgroundColor ="#FFA500";
+        document.getElementById('submit-button').style.color ="#003366";
+        
+        }
+      </script>
+</body>
+</html>

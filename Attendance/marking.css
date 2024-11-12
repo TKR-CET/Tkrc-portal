@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.attendance-container {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.mandatory-text {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.attendance-title {
+  text-align: center;
+  color: #5a5a5a;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.period-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.period-section label {
+  font-weight: 600;
+  color: #333;
+}
+
+.period-section input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.subject-topic {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subject-topic label {
+  font-weight: 600;
+  color: #333;
+}
+
+.subject-topic input[type="text"],
+.subject-topic textarea {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.subject-topic textarea {
+  resize: none;
+  height: 50px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.attendance-table thead {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  /* background-color:  #fad9d9; */
+}
+
+.attendance-table th {
+  font-weight: 700;
+
+}
+
+.attendance-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.attendance-table input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.attendance-table input[type="radio"]:hover {
+  cursor: pointer;
+  
+}
+
+.attendance-table td input[type="radio"] {
+  margin: 0;
+} 
+
+/* Styles for custom radio buttons */
+
+
+@media (max-width: 768px) {
+  .form-section {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .subject-topic input[type="text"],
+  .subject-topic textarea {
+      width: 100%;
+  }
+  
+  .attendance-container {
+      padding: 15px;
+  }
+}
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color:red;
+}
+/* Left section for navigation links */
+.left-section {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFA500;
+  color: #003366;
+  border-radius: 4px;
+}
+
+/* Right section for user profile */
+.user-profile {
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #003366;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info-left, .college-info-right {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.college-info-left p, .college-info-right p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.college-info-left p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.college-info-right p.red-text {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+#submit-button{
+  padding:10px 15px;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  border-style: none;
+  /* text-align: center; */
+  margin-top: 15px;
+  position: relative;
+  left: 50%;
+  font-weight: bold;
+}
+/* #submit-button:hover{
+  background-color: #FFA500;
+  color:#003366;
+  box-shadow: 10px 2px 0.5 rgb(28, 27, 27);
+  /* font-size: 30px; */
+/* }  */

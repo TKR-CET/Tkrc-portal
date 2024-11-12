@@ -1,0 +1,259 @@
+/* General Styling */
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info-left, .college-info-right {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.college-info-left p, .college-info-right p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.college-info-left p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.college-info-right p.red-text {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Video Styling */
+.video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 01px;
+
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: red;
+}
+
+/* Left section for navigation links */
+.left-section {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFA500;
+  color: #003366;
+  border-radius: 4px;
+}
+
+/* Right section for user profile */
+.user-profile {
+  color: white;
+  font-size: 14px;
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+  position: absolute;
+  background-color: transparent;
+  min-width: 100px;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 10;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.outer-attendance {
+  display: none;
+}
+
+.dropdown:hover .outer-attendance {
+  display: block;
+}
+
+/* Styling for Attendance Dropdown */
+.outer-attendance select {
+  appearance: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #003366;
+  background-color: #f0f2f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the dropdown options */
+.outer-attendance select:hover {
+  background-color: #5a5c5f;
+  color: #fff;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-links li:hover {
+  background-color: #f0e9e9;
+  border-radius: 5px;
+  padding: 4px 5px;
+  transition: padding color 0.6s;
+}
+
+.footer-links a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.6s;
+}
+
+.footer-links a:hover {
+  color: #003366;
+  text-decoration: none;
+}
+
+.outer-attendance {
+  display: none;
+  
+}
+
+.a-check:checked ~ .outer-attendance {
+  display: block;
+}
+
+.a-check {
+  display: none;
+  position: relative;
+  left: 500px;
+}
+
+/* Specific Dropdown Select Styling */
+.outer-attendance select {
+  appearance: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #4c4e50;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: background-color 0.5s, border-color 0.5s;
+  width: 150px;
+  text-align: center;
+  height: auto;
+}
+
+.outer-attendance select:hover {
+  background-color: #FFA500;
+  color: #003366;
+}
+
+.outer-attendance option {
+  color: #333;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.outer-attendance option[selected] {
+  color: #4f5051;
+  font-weight: bold;
+}
+
+.drop-container {
+  position: relative;
+  top: 10px;
+  right: 15px;
+  padding: 5px 0;
+}

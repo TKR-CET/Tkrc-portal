@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance</title>
+<link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+<!-- <div class="navbar">
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">TimeTable</a>
+        <div class="dropdown">
+            <a href="#">Attendance</a>
+            <div class="dropdown-content">
+                <a href="#">Class</a>
+                <a href="#">Register</a>
+                <a href="#">Activity Dairy</a>
+            </div>
+        </div>
+    </div> -->
+    <div class="header">
+        <div class="college-info-left">
+            <p style="color: red ; font-weight: bold;">COLLEGE CODE: K9</p>
+            <p>Survey No.8/A, Medbowli, Meerpet<br>
+            Hyderabad - 500097, Telangana, INDIA</p>
+            <p><a href="http://www.tkrct.ac.in">www.tkrct.ac.in</a></p>
+        </div>
+        
+        <div class="center-content">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">TKR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+            <img src="../images/logo.png" alt="TKRCET Logo" class="logo"> <!-- Replace "images/logo.png" with the actual path to the logo -->
+        </div>
+    
+        <div class="college-info-right">
+            <p class="red-text">An Autonomous Institution</p>
+            <p>Accredited with 'A+' Grade by NAAC<br>
+            Approved by AICTE, New Delhi<br>
+            Affiliated to JNTUH<br>
+            Recognized under 2(f) & 12(B) of UGC</p>
+        </div>
+    </div>
+    
+      <nav>
+        <div class="left-section">
+            <ul class="nav-links">
+                <li><a href="../one.html">Home</a></li>
+                <li><a href="../timetable/timetable.html">Timetable</a></li>
+                <li> <div class="dropdown">
+                    <a href="#">Attendance</a>
+                    <div class="dropdown-content">
+                        <a href="#">Class</a>
+                        <a href="#">Register</a>
+                        <a href="#">Activity Dairy</a>
+                    </div>
+                </div></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </div>
+            <div class="user-profile">
+                <span>Welcome,User</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Account ▾</button>
+                    <div class="dropdown-content">
+                        <a href="#settings">Settings</a>
+                        <a href="../login/login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- <div class="user">Gopi Doneti</div> -->
+</div>
+
+<div class="content">
+    <div class="title-bar">
+        <!-- <h2>B.Tech - IV ME I A</h2> -->
+        <div class="batch-date-selectors">
+            <label for="batch">Batch: </label>
+            <select id="batch" class="batch-selector">
+                <option>ALL</option>
+            </select>
+            <label for="date">Date: </label>
+            <input type="date" id="date" class="date-selector" value="2024-11-06">
+            <a href="../Attendance/marking.html" class="go">GO</a>
+        </div>
+    </div>
+    <ul class="container">
+   <li class="section" style="padding-left: 40px;"> Subject: CAD/CAM Lab</li>
+    <li class="section" style="padding-right: 40px;">Section: IV ME I A (2024-25)</li>
+    </ul>
+    <table class="attendance-table">
+        <tr class="table1">
+            <th>Class</th>
+            <th>Date</th>
+            <th>P</th>
+            <th>Absentees</th>
+            <th>Topic</th>
+            <th>Remark</th>
+            <th>No.</th>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>28-10-24</td>
+            <td>6</td>
+            <td>20K91A0328, 20K91A0335, 20K91A0343</td>
+            <td>3</td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>28-10-24</td>
+            <td>5</td>
+            <td>20K91A0328, 20K91A0335, 20K91A0343</td>
+            <td>3</td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <!-- Add more rows as necessary -->
+    </table>
+</div>
+
+</body>
+</html>

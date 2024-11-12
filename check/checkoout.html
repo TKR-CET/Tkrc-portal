@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKR College Header</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <div class="maindiv">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="college-info-left">
+                <p style="color: red ; font-weight: bold;">COLLEGE CODE: K9</p>
+                <p>Survey No.8/A, Medbowli, Meerpet<br>
+                Hyderabad - 500097, Telangana, INDIA</p>
+                <p><a href="http://www.tkrct.ac.in">www.tkrct.ac.in</a></p>
+            </div>
+            
+            <div class="center-content">
+                <h1 style="font-family: 'Times New Roman', Times, serif;">TKR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+                <img src="images/logo.png" alt="TKRCET Logo" class="logo"> <!-- Replace "images/logo.png" with the actual path to the logo -->
+            </div>
+
+            <div class="college-info-right">
+                <p class="red-text">An Autonomous Institution</p>
+                <p>Accredited with 'A+' Grade by NAAC<br>
+                Approved by AICTE, New Delhi<br>
+                Affiliated to JNTUH<br>
+                Recognized under 2(f) & 12(B) of UGC</p>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="left-section">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="./timetable/timetable.html">Timetable</a></li>
+                    <li>
+                        <label for="attendance-toggle" class="attendance-label">Attendance ▾</label>
+                        <input type="checkbox" id="attendance-toggle" class="attendance-checkbox"/>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <label for="class-checkbox">Class</label>
+                                <input type="checkbox" id="class-checkbox"/>
+                                <ul class="sub-dropdown">
+                                    <li><a href="#year1">Year-1</a></li>
+                                    <li><a href="#year2">Year-2</a></li>
+                                    <li><a href="#year3">Year-3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#register">Register</a></li>
+                            <li><a href="#activity-diary">Active Diary</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#notifications">Notifications</a></li>
+                </ul>
+            </div>
+            <div class="user-profile">
+                <span>Welcome, User</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Account ▾</button>
+                    <div class="dropdown-content">
+                        <a href="#settings">Settings</a>
+                        <a href="#logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         
+        <!-- Video Section -->
+        <video src="../images/tkr.mp4" autoplay loop muted class="video" style="box-shadow: 0px 0px 20px rgb(255, 255, 255);"></video>
+
+        <!-- Footer Section -->
+        <footer>
+            <ul class="footer-links">
+                <li><a href="#chairman">Chairman</a></li>
+                <li><a href="#secretary">Secretary</a></li>
+                <li><a href="#treasurer">Treasurer</a></li>
+                <li><a href="#principal">Principal</a></li>
+                <li><a href="#dean">Dean</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#mission">Mission</a></li>
+            </ul>
+            <p>&copy; 2024 TKR College of Engineering & Technology. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+<!--  -->
+<nav>
+    <div class="left-section">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="./timetable/timetable.html">Timetable</a></li>
+          
+            
+                
+            <li><a href="#attendance"><label for="inner-attendance">Attendance</label></a></li>
+            <input type="checkbox" id="inner-attendance" class="a-check"/>
+            <select class="outer-attendance" id="inner-attendance">
+                
+
+
+                <option id="optionsid" value="select">Select</option>
+
+                <option id="optionsid" value="class">
+                    <input type="checkbox" id="class-checkbox"/>
+                    <label for="class-checkbox">Class</label>
+                    <select  id="class-options">
+                        <option id="inner-c-o">Year-1</option>
+                        <option id="inner-c-o">Year-</option>
+                        <option id="inner-c-o">Year-1</option>
+                    </select>
+                </option>
+
+                <option id="optionsid" value="register">Register</option>
+                <option id="optionsid" value="activity-diary">Active dairy</option>
+            </select>
+        
+      
+
+            <li><a href="#notifications">Notifications</a></li>
+        </ul>
+    </div>
+    <div class="user-profile">
+        <span>Welcome, User</span>
+        <div class="dropdown">
+            <button class="dropbtn">Account ▾</button>
+            <div class="dropdown-content">
+                <a href="#settings">Settings</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>

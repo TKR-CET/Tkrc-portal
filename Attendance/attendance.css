@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+}
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar .menu .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #555555;
+}
+.content {
+  padding: 20px;
+}
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.title-bar h2 {
+  color: #003366;
+}
+.batch-date-selectors {
+  display: flex;
+  align-items: center;
+}
+.batch-selector,
+.date-selector {
+  margin: 0 10px;
+  padding: 5px;
+}
+/* .go-button {
+  background-color:red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+} */
+/* .go-button:hover {
+  background-color: #FFA500;
+  color:#003366;
+} */
+ .go{
+  background-color:red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+   color: white;
+   border-radius: 8px;
+   font-size: 15px;
+ }
+.go:hover{
+  background-color: #FFA500;
+  color:#003366;
+  /* 
+*/} 
+.sub
+ject {
+  color: #0073e6;
+  font-weight: bold;
+}
+.section {
+  color: #003366;
+  font-weight: bold;
+}
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.attendance-table th,
+.attendance-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+}
+.attendance-table th {
+  background-color: #fad9d9;
+}
+.attendance-table td:nth-child(4) {
+  color:purple;
+}
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color:red;
+}
+/* Left section for navigation links */
+.left-section {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFA500;
+  color: #003366;
+  border-radius: 4px;
+}
+
+/* Right section for user profile */
+.user-profile {
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #003366;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info-left, .college-info-right {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.center-content {
+  text-align: center;
+}
+.table1{
+  background-color: #fad9d9;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.college-info-left p, .college-info-right p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.college-info-left p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.college-info-right p.red-text {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #e6adad;
+  padding: 10px;
+}

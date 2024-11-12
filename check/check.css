@@ -1,0 +1,323 @@
+/* General Styling */
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info-left, .college-info-right {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.college-info-left p, .college-info-right p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.college-info-left p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.college-info-right p.red-text {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Video Styling */
+.video {
+  width: 100%;
+  height: auto;
+  position: relative; 
+  top: 5px; 
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #d32f2f; /* Slightly darker red for clarity */
+}
+
+.left-section {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative; /* Position for dropdown */
+}
+
+.nav-links a, .attendance-label {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover, .attendance-label:hover {
+  background-color: #FFA500;
+  color: #003366;
+}
+
+/* Dropdown Menu Styling */
+.attendance-checkbox {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #4f5051;
+  width: 200px;
+  color: #fff;
+  border-radius: 4px;
+  text-align: left;
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.attendance-checkbox:checked ~ .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a, .dropdown-menu li label {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li label:hover {
+  background-color: #FFA500;
+  color: #003366;
+}
+
+/* Sub-dropdown Styling */
+.sub-dropdown {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+#class-checkbox:checked + .sub-dropdown {
+  display: block;
+}
+
+.sub-dropdown li {
+  margin: 5px 0;
+}
+
+.sub-dropdown li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.sub-dropdown li a:hover {
+  background-color: #FFA500;
+  color: #003366;
+}
+
+/* Right section for user profile */
+.user-profile {
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #FFA500;
+  color: #003366;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #003366;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #ffffff; /* White background for a clean look */
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Even spacing between links */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 18px; /* Large, bold text for links */
+  text-decoration: none;
+}
+
+.footer-links li:hover {
+  background-color: #f0e9e9;
+  border-radius: 5px;
+  padding: 4px 5px;
+  text-decoration: none;
+  transition: padding 0.3s, color 0.3s;
+}
+
+.footer-links a {
+  color: purple; /* Matching the purple color in the header */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.6s;
+}
+
+.footer-links a:hover {
+  color: #003366; /* Darker color on hover */
+  text-decoration: none;
+}
+
+/* Attendance Dropdown Styling */
+.attendance-label {
+  display: block;
+}
+
+.dropdown-menu a, .dropdown-menu label {
+  display: block;
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.sub-dropdown {
+  position: relative;
+  left: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .college-info-left, .college-info-right {
+    text-align: left;
+    padding: 5px 0;
+  }
+
+  .center-content h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

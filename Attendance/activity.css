@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F0F4F8;
+}
+
+/* Header Style */
+header {
+  background-color: #00008B;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #F7F9FA;
+  padding: 1rem;
+  border-right: 2px solid #ddd;
+}
+
+.sidebar select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Main Table Section */
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.main-content h2 {
+  background-color:  #e6adad;
+  color: #4B0082;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  border: solid 1px black;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #fad9d9;
+  color: #4B0082;
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+  text-align: center;
+}
+
+/* Highlighted elements */
+th, .sidebar select, .sidebar a {
+  font-weight: bold;
+}
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color:red;
+}
+/* Left section for navigation links */
+.left-section {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFA500;
+  color: #003366;
+  border-radius: 4px;
+}
+
+/* Right section for user profile */
+.user-profile {
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #003366;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info-left, .college-info-right {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.college-info-left p, .college-info-right p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.college-info-left p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.college-info-right p.red-text {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}

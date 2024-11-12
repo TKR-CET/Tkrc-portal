@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Table</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <div class="attendance-container">
+        <div class="form-controls">
+            <label for="date">Select Date</label>
+            <input type="date" id="date" name="date" value="2024-11-05">
+            
+            <label for="hour">Select Hour</label>
+            <select id="hour" name="hour">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            
+            <label for="extended-hours">Extended Hours</label>
+            <select id="extended-hours" name="extended-hours">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </div>
+
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Repeat this row for each student -->
+                <tr>
+                    <td>23891A67C8</td>
+                    <td>Abramoni Sandhya Rani</td>
+                    <td><input type="radio" name="attendance1" value="present"></td>
+                    <td><input type="radio" name="attendance1" value="absent"></td>
+                </tr>
+                <tr>
+                    <td>23891A67C9</td>
+                    <td>Amadala Viharika</td>
+                    <td><input type="radio" name="attendance2" value="present"></td>
+                    <td><input type="radio" name="attendance2" value="absent"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+

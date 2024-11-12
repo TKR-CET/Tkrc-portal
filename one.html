@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TKR College Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv">
+    <!-- Header Section -->
+    <div class="header">
+        <div class="college-info-left">
+            <p style="color: red; font-weight: bold;">COLLEGE CODE: K9</p>
+            <p>Survey No.8/A, Medbowli, Meerpet<br>
+            Hyderabad - 500097, Telangana, INDIA</p>
+            <p><a href="http://www.tkrct.ac.in">www.tkrct.ac.in</a></p>
+        </div>
+        
+        <div class="center-content">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">TKR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+            <img src="images/logo.png" alt="TKRCET Logo" class="logo"> <!-- Replace "images/logo.png" with the actual path to the logo -->
+        </div>
+
+        <div class="college-info-right">
+            <p class="red-text">An Autonomous Institution</p>
+            <p>Accredited with 'A+' Grade by NAAC<br>
+            Approved by AICTE, New Delhi<br>
+            Affiliated to JNTUH<br>
+            Recognized under 2(f) & 12(B) of UGC</p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="left-section">
+            <ul class="nav-links">
+                <li><a href="../one.html">Home</a></li>
+                <li><a href="./timetable/timetable.html">Timetable</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" onclick="toggleAttendanceDropdown()">Attendance</a>
+                        <div class="drop-container">
+                            <div class="dropdown-content outer-attendance">
+                                <select id="classDropdown" style="display:none;" onchange="showDepartmentDropdown()">
+                                    <option value="">Class</option>
+                                    <option value="class1">Year-1</option>
+                                    <option value="class2">Year-2</option>
+                                </select>
+                                <select id="departmentSelect" onchange="location=this.value;" style="display:none;">
+                                    <option value="">Department</option>
+                                    <option value="./Attendance/attendance.html">CSE-A/P&S</option>
+                                    <option value="ece">ECE-B/P&S</option>
+                                    <option value="eee">EEE-A/P&S</option>
+                                </select>
+                                <select id="registerSelect" style="display:none;">
+                                    <option value="">Register</option>
+                                </select>
+                                <select id="activityDiarySelect" onchange="location=this.value;" style="display:none;">
+                                    <option value="">Activity Diary</option>
+                                    <option value="./Attendance/activity.html">Activity Diary</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </div>
+        <div class="user-profile">
+            <span>Welcome, User</span>
+            <div class="dropdown">
+                <button class="dropbtn">Account ▾</button>
+                <div class="dropdown-content">
+                    <a href="#settings">Settings</a>
+                    <a href="./login/login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+     
+    <video src="../images/tkr.mp4" autoplay loop muted class="video" style="box-shadow: 0px 0px 20px rgb(255, 255, 255);"></video>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#chairman">Chairman</a></li>
+            <li><a href="#secretary">Secretary</a></li>
+            <li><a href="#treasurer">Treasurer</a></li>
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#dean">Dean</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#mission">Mission</a></li>
+        </ul>
+        <p>&copy; 2024 TKR College of Engineering & Technology. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    function toggleAttendanceDropdown() {
+        document.getElementById("classDropdown").style.display = "block";
+        document.getElementById("registerSelect").style.display = "block";
+        document.getElementById("activityDiarySelect").style.display = "block";
+    }
+
+    function showDepartmentDropdown() {
+        document.getElementById("registerSelect").style.display = "none";
+        document.getElementById("activityDiarySelect").style.display = "none";
+        document.getElementById("departmentSelect").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
